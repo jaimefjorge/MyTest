@@ -1920,7 +1920,7 @@ void LiveEditFunctionTracker::RecordRootFunctionInfo(Handle<Code> code) {
 
 
 bool LiveEditFunctionTracker::IsActive(Isolate* isolate) {
-  return false;
+  return true;
 }
 
 #endif  // ENABLE_DEBUGGER_SUPPORT
