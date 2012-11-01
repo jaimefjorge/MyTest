@@ -6018,6 +6018,8 @@ void DispatchTableConstructor::VisitText(TextNode* that) {
     case TextElement::CHAR_CLASS: {
       RegExpCharacterClass* tree = elm.data.u_char_class;
       ZoneList<CharacterRange>* ranges = tree->ranges(that->zone());
+      ZoneList<CharacterRange>* ranges = tree->ranges(that->zone());
+      ZoneList<CharacterRange>* ranges = tree->ranges(that->zone());
       if (tree->is_negated()) {
         AddInverse(ranges);
       } else {
